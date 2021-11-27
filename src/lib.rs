@@ -22,6 +22,26 @@ fn should_be_uppercase(c: char) -> Option<bool> {
     }
 }
 
+/// Returns a String with the letters changed to alternate
+/// between uppercase and lowercase.
+/// 
+/// All instances of the letters L and i are set to uppercase
+/// and lowercase, respectively.
+/// The case of the first letter in the input is determined based on
+/// where either aforementioned letter first appears,
+/// defaulting to lowercase if neither appears in the text.
+/// 
+/// The capitalisation in the input is not preserved, although
+/// all non-ascii and non-alphabetic characters are preserved as-is.
+/// 
+/// # Examples
+/// 
+/// ```
+/// let hello = "Hello, world!";
+/// let ironic_hello = fancy_mocker::mock(hello);
+/// 
+/// assert_eq!(ironic_hello, "HeLLo, WoRLd!");
+/// ```
 pub fn mock(text: &str) -> String {
     
 
